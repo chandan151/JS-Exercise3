@@ -1,3 +1,12 @@
+$(".face").on( 'mouseenter', function() {
+    console.log("mouse enter");
+});
+
+$(document).keypress(function(event) {
+    if (event.which === 13) {
+        console.log("done");
+    }
+});
 
 $("#btn-1").on('click', function() {
     $('.mouth').removeClass('s-mouth').removeClass('a-mouth').addClass('h-mouth');
